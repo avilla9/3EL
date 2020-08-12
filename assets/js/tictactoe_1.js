@@ -153,7 +153,7 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                 
                  $.ajax({
                     method: 'POST',
-                    url: base_url+'/scores/create', 
+                    url: base_url+'index.php/scores/create', 
                     data: {
                         against: vagainst,
                         winner: gameresult

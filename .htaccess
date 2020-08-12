@@ -1,0 +1,18 @@
+Options FollowSymLinks
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	DirectoryIndex index.php
+    RewriteEngine on
+	RewriteBase /3EL
+	#Force SSL
+	#RewriteCond %{SERVER_PORT} 80 
+	#RewriteRule ^(.*)$ https://intranet.umc.local/$1 [R,L]
+	RewriteCond $1 !^(index\.php|images|robots\.txt)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+ 
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /index.php
+</IfModule>

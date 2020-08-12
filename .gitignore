@@ -1,52 +1,127 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
+#-------------------------
+# Operating Specific Junk Files
+#-------------------------
 
-# Email spool folder
-/app/spool/*
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Cache, session files and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
+# OS X Thumbnails
+._*
 
-# Logs (Symfony4)
-/var/log/*
-!var/log/.gitkeep
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Parameters
-/app/config/parameters.yml
-/app/config/parameters.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Managed by Composer
-/app/bootstrap.php.cache
-/var/bootstrap.php.cache
-/bin/*
-!bin/console
-!bin/symfony_requirements
-/vendor/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
+# Windows shortcuts
+*.lnk
 
-# PHPUnit
-/app/phpunit.xml
-/phpunit.xml
+# Linux
+*~
 
-# Build data
-/build/
+# KDE directory preferences
+.directory
 
-# Composer PHAR
-/composer.phar
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
 
-# Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+.env
+.vagrant
+Vagrantfile
 
-# Embedded web-server pid file
-/.web-server-pid
+#-------------------------
+# Temporary Files
+#-------------------------
+writable/cache/*
+!writable/cache/index.html
+
+writable/logs/*
+!writable/logs/index.html
+
+writable/session/*
+!writable/session/index.html
+
+writable/uploads/*
+!writable/uploads/index.html
+
+writable/debugbar/*
+
+php_errors.log
+
+#-------------------------
+# User Guide Temp Files
+#-------------------------
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#-------------------------
+# Test Files
+#-------------------------
+tests/coverage*
+
+# Don't save phpunit under version control.
+phpunit
+
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+
+#-------------------------
+# IDE / Development Files
+#-------------------------
+
+# Modules Testing
+_modules/*
+
+# phpenv local config
+.php-version
+
+# Jetbrains editors (PHPStorm, etc)
+.idea/
+*.iml
+
+# Netbeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.phpintel
+/api/
+
+# Visual Studio Code
+.vscode/
+
+/results/
+/phpunit*.xml
+/.phpunit.*.cache
+

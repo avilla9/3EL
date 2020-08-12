@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: adminkofi
- * Date: 30/01/17
- * Time: 1:19
- */
+
 
 class LoginController extends CI_Controller
 {
@@ -45,7 +40,3 @@ class LoginController extends CI_Controller
             }
 
         }
-
-
-
-?>

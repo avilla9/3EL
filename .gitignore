@@ -95,7 +95,7 @@ _modules/*
 # phpenv local config
 .php-version
 
-# Jetbrains editors (PHPStorm, etc)
+# Jetbrains editors (etc)
 .idea/
 *.iml
 

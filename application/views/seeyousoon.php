@@ -1,26 +1,26 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: adminkofi
- * Date: 28/01/17
- * Time: 10:53
- */
-
-
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="utf-8">
     <title>Welcome to CodeIgniter</title>
 
     <style type="text/css">
-        ::selection { background-color: #E13300; color: white; }
-        ::-moz-selection { background-color: #E13300; color: white; }
+        ::selection {
+            background-color: #E13300;
+            color: white;
+        }
+
+        ::-moz-selection {
+            background-color: #E13300;
+            color: white;
+        }
 
         body {
             background-color: #8ac8ae;
@@ -73,17 +73,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             margin: 20px;
             border: 12px solid #d01706;
             -webkit-box-shadow: 0 0 8px #00d029;
-
     </style>
 </head>
+
 <body>
 
-<div id="container">
-    <h1>See you soon!</h1>
-    </form>
-</div>
+    <div id="container">
+        <h1>See you soon!</h1>
+        </form>
+    </div>
 
-</div>
+    </div>
 
 </body>
+
 </html>

@@ -49,14 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Tic_tac_toe/begin';
+$route['default_controller'] = 'LoginController';
+$route['default_controller'] = 'SeeYouSoonController';
+$route['default_controller'] = 'HomeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['tic-tac-toe'] = 'Tic_tac_toe/begin';
-$route['tic-tac-toe/begin'] = 'Tic_tac_toe/begin';
-$route['tic-tac-toe/submit'] = 'Tic_tac_toe/submit';
-$route['tic-tac-toe/play'] = 'Tic_tac_toe/play';
-$route['tic-tac-toe/play/(:any)'] = 'Tic_tac_toe/play/$1';
-$route['tic-tac-toe/results'] = 'Tic_tac_toe/results';
-$route['tic-tac-toe/results/(:any)'] = 'Tic_tac_toe/results/$1';
+$route['scores/create'] = 'scores/create';
+$route['scores/(:any)'] = 'scores/view/$1';
+$route['scores'] = 'scores';
+$route[''] = '';
+$route['tictactoe'] = 'tictactoe';

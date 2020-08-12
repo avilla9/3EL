@@ -209,13 +209,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <p>you have signed in successfully, Lets's play! </p>
 
         <br id="body">
-        <a href="<?php echo base_url(); ?>index.php/tictactoe/index/0">Level 0 </a> </br>
-        <a href="<?php echo base_url(); ?>index.php/tictactoe/index/1">Level 1 </a> </br>
-        <a href="<?php echo base_url(); ?>index.php/tictactoe/index/2">Level 2 </a> </br>
+        <a href="<?php echo base_url(); ?>tictactoe/index/0">Level 0 </a> </br>
+        <a href="<?php echo base_url(); ?>tictactoe/index/1">Level 1 </a> </br>
+        <a href="<?php echo base_url(); ?>tictactoe/index/2">Level 2 </a> </br>
     </div>
     <p>How to play <a href="/play_tictactoe">how_to_play</a>.</p>
-    <button>Logout <a href="<?php echo base_url(); ?>index.php/tictactoe/index/3"></button>
-    </form>
+    <button>Logout <a href="<?php echo base_url(); ?>tictactoe/index/3"></button>
     </div>
     <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/bootstrap.js"></script>

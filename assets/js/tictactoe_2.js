@@ -219,7 +219,7 @@ gamearea = {
 
         $.ajax({
             method: 'POST',
-            url: base_url + 'index.php/scores/create',
+            url: base_url + '/scores/create',
             data: {
                 against: vagainst,
                 winner: gameresult

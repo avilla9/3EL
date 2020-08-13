@@ -44,7 +44,7 @@ html, body, .container-fluid {
     font-weight: bold;
 }
 .box {
-    border:6px solid #1a2849;
+    border:3px solid #1a2849;
     height:100%;
     text-align: center; 
     width:33.33%;            

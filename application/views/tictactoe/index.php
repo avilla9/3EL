@@ -1,16 +1,3 @@
-<!-- <script>
-  var i = 0;
-
-  function move() {
-    console.log("hello");
-    if ((i % 2) == 0) {
-      document.getElementById("moveTurn").innerHTML = "<h2>Turno de (0)</h2>";
-    } else {
-      document.getElementById("moveTurn").innerHTML = "<h2>Turno de (X)</h2>";
-    }
-    return i++;
-  }
-</script> -->
 <div class="container-fluid">
   <div class="row mainpanel">
     <div class="col-md-9 leftpanel">

@@ -13,22 +13,22 @@
 </script>
 <div class="container-fluid">
   <div class="row mainpanel">
-    <div class="col-md-9 leftpanel" onclick="move(i)">
+    <div class="col-md-9 leftpanel">
       <div class="gameboard">
         <div class="row turn hidden-xs">
           <div class="col-md-12"></div>
         </div>
-        <div class="row">
+        <div class="row" onclick="move(i)">
           <div class="col-md-4 col-xs-4 box tleft" id="0"></div>
           <div class="col-md-4 col-xs-4 box top" id="1"></div>
           <div class="col-md-4 col-xs-4 box tright" id="2"></div>
         </div>
-        <div class="row">
+        <div class="row" onclick="move(i)">
           <div class="col-md-4 col-xs-4 box mleft" id="3"></div>
           <div class="col-md-4 col-xs-4 box middle" id="4"></div>
           <div class="col-md-4 col-xs-4 box mright" id="5"></div>
         </div>
-        <div class="row">
+        <div class="row" onclick="move(i)">
           <div class="col-md-4 col-xs-4 box bleft" id="6"></div>
           <div class="col-md-4 col-xs-4 box bottom" id="7"></div>
           <div class="col-md-4 col-xs-4 box bright" id="8"></div>
@@ -55,9 +55,6 @@
           </p>
         </div>
         <div class="col-md-12 col-xs-12 footer">
-          <!-- <div id="turn" class="">
-            Turno de (X)
-          </div> -->
           <br><br>
           <div class="friend_computer">
             <center>

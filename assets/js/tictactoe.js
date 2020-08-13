@@ -88,7 +88,6 @@ gamearea = {
             gamestatus = gamearea.stopGame(counter);
         }
         return gamestatus;
-        console.log("player #" + player + "  Box id: " + selectedid + "  counter : " + counter);
 
     },
     stopGame: function (player) {

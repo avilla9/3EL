@@ -1,6 +1,19 @@
+<script>
+  var i = 0;
+
+  function move() {
+    console.log("hello");
+    if ((i % 2) == 0) {
+      document.getElementById("moveTurn").innerHTML = "<h2>Turno de (0)</h2>";
+    } else {
+      document.getElementById("moveTurn").innerHTML = "<h2>Turno de (X)</h2>";
+    }
+    return i++;
+  }
+</script>
 <div class="container-fluid">
   <div class="row mainpanel">
-    <div class="col-md-9 leftpanel">
+    <div class="col-md-9 leftpanel" onclick="move(i)">
       <div class="gameboard">
         <div class="row turn hidden-xs">
           <div class="col-md-12"></div>
@@ -25,8 +38,7 @@
         <div class="col-md-12 col-xs-4">
           <center>
             <h1>
-              <div id="turn" class="">
-                Turno de (X)
+              <div id="moveTurn">
               </div>
             </h1>
           </center>

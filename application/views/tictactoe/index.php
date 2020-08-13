@@ -1,7 +1,6 @@
 <div class="container-fluid">
   <div class="row mainpanel">
     <div class="col-md-9 leftpanel">
-
       <div class="gameboard">
         <div class="row turn hidden-xs">
           <div class="col-md-12"></div>
@@ -21,45 +20,57 @@
           <div class="col-md-4 col-xs-4 box bottom" id="7"></div>
           <div class="col-md-4 col-xs-4 box bright" id="8"></div>
         </div>
-        <div class="row turn">
-          <div class="col-md-12 col-xs-12 footer">
-            <div id="turn" class="text-info">(X) Turn</div>
-            <div class="friend_computer">
-              <div class="computer">
-                <i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-4">
+          <center>
+            <h1>
+              <div id="turn" class="">
+                Turno de (X)
               </div>
-              <div class="friend">
-                <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
+            </h1>
+          </center>
         </div>
       </div>
-
     </div>
     <div class="col-md-3 hidden-xs rightpanel color-swatch gray-lighter">
-
-      <div class="panel panel-default">
-        <div class="panel-heading text-center"><strong>Last matches scores</strong></div>
-        <div class="panel-body">
-          <div class="row scoresheading">
-            <div class="col-md-3">Against</div>
-            <div class="col-md-3">Winner</div>
-            <div class="col-md-6">Date</div>
+      <div class="row turn">
+        <div class="col">
+          <p>
+            <center>
+              <h1>Tres en Línea</h1>
+            </center>
+          </p>
+        </div>
+        <div class="col-md-12 col-xs-12 footer">
+          <!-- <div id="turn" class="">
+            Turno de (X)
+          </div> -->
+          <br><br>
+          <div class="friend_computer">
+            <center>
+              <h3>MODO</h3>
+            </center>
+            <div class="computer">
+              Jugar contra PC <i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="friend">
+              Jugar contra rival <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            </div>
           </div>
-          <div id="scores" class="scores text-nowrap">
-            <?php
-            foreach ($scores as $score) { ?>
-              <div class="row">
-                <div class="col-md-3"><?php echo $score['against']; ?></div>
-                <div class="col-md-3"><?php echo $score['winner']; ?></div>
-                <div class="col-md-6"><?php echo $score['created_at']; ?></div>
-              </div>
-            <?php } ?>
-          </div>
+          <br><br>
+          <p>
+            <center>
+              <h3>DIFICULTAD</h3>
+            </center>
+            <div class="btn-group" role="group">
+              <a href="<?php echo base_url(); ?>tictactoe/index/0"><button type="button" class="btn btn-secondary">Fácil</button></a>
+              <a href="<?php echo base_url(); ?>tictactoe/index/1"><button type="button" class="btn btn-secondary">Normal</button></a>
+              <a href="<?php echo base_url(); ?>tictactoe/index/2"><button type="button" class="btn btn-secondary">Dificil</button></a>
+            </div>
+          </p>
         </div>
       </div>
-
     </div>
   </div>
 </div>

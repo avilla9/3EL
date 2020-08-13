@@ -1,13 +1,10 @@
 <?php
-// here goes the css files
-
-
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 
 
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -28,12 +25,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <form method="post">
             <input type="text" name="" placeholder="Username" required="required" />
             <input type="password" name="p" placeholder="Password" required="required" />
-            <center><button type="submit" class="btn btn-primary">Acceder</button></center>
+            <center><a type="button" class="btn" href="<?php echo base_url(); ?>tictactoe/index/0">Acceder</a></center>
         </form>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="js/index.js"></script>
-
 </body>
 
 </html>

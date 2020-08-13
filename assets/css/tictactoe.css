@@ -20,11 +20,11 @@ html, body, .container-fluid {
 }
 .leftpanel {
     height:100%;            
-    background-color: #75cc77;
+    background-color: #e4e3e3;
 }
 .rightpanel {
     height:100%;
-    background-color: #dd2e6c;
+    background-color: #0f4c75;
 }
 .rpanelheader {
     text-align: center;
@@ -34,7 +34,7 @@ html, body, .container-fluid {
     font-weight: bold;
 }
 .box {
-    border:1px solid #270f7b;
+    border:6px solid #1b262c;
     height:100%;
     text-align: center; 
     width:33.33%;            

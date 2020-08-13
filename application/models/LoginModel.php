@@ -8,7 +8,7 @@ class LoginModel extends CI_Model
     {
 
         $this->db->select('name', 'password');
-        $this->db->from('members');
+        $this->db->from('Login');
         $this->db->where('name', $name);
         $this->db->where('password', $password);
 

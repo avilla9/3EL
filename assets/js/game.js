@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/* $(document).ready(function () {
 
   $.get(
     "Tictactoe/getForm",
@@ -12,4 +12,4 @@ $(document).ready(function () {
       }
     }
   );
-});
+}); */

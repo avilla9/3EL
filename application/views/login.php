@@ -25,9 +25,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
           $(this).serialize(),
           function(data) {
             if (data == 1) {
-              url = "<?php echo base_url(); ?>tictactoe/index/0";
-              $(location).attr("href", url);
+              /* url = "<?php echo base_url(); ?>tictactoe/index/0";
+              $(location).attr("href", url); */
+              console.log(data);
             } else {
+              console.log(data);
               swal("Error al iniciar sesión", "Error desconocido", "warning");
             }
           }

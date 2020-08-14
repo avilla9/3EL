@@ -62,9 +62,9 @@
               <h3>DIFICULTAD</h3>
             </center>
             <div class="btn-group" role="group">
-              <a href="<?php echo base_url(); ?>tictactoe/index/0"><button type="button" class="btn btn-secondary">Fácil</button></a>
-              <a href="<?php echo base_url(); ?>tictactoe/index/1"><button type="button" class="btn btn-secondary">Normal</button></a>
-              <a href="<?php echo base_url(); ?>tictactoe/index/2"><button type="button" class="btn btn-secondary">Dificil</button></a>
+              <a href="<?php echo base_url(); ?>tictactoe/index/0/<?php echo $user_id; ?>"><button type="button" class="btn btn-secondary">Fácil</button></a>
+              <a href="<?php echo base_url(); ?>tictactoe/index/1/<?php echo $user_id; ?>"><button type="button" class="btn btn-secondary">Normal</button></a>
+              <a href="<?php echo base_url(); ?>tictactoe/index/2/<?php echo $user_id; ?>"><button type="button" class="btn btn-secondary">Dificil</button></a>
             </div>
           </p>
         </div>

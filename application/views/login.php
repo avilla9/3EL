@@ -24,11 +24,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
           "LoginController/getForm",
           $(this).serialize(),
           function(data) {
-            if (data == 0) {
-              swal("Error al iniciar sesión", "Error desconocido", "warning");
-            } else {
+            if (data >= 1) {
               url = "<?php echo base_url(); ?>Tictactoe/index/0/" + data;
               $(location).attr("href", url);
+            } else {
+              swal("Error al iniciar sesión", "Verifique los campos e intente nuevamente.", "warning");
             }
           }
         );

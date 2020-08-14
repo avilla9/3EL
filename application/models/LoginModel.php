@@ -11,25 +11,41 @@ class LoginModel extends CI_Model
 
     $query = $this->db->get();
 
-    if ($query->num_rows() >= 1) {
+    if ($query->num_rows() > 0) {
       foreach ($query->result_array() as $row) {
         //echo $row;
         return $row;
       }
-    } else if ($this->db->insert('login', $data)) {
-      $this->db->select('name', 'password');
+    } else {
+      $this->db->select('name');
       $this->db->from('login');
       $this->db->where('name', $data["name"]);
-      $this->db->where('password', $data["password"]);
-
       $query = $this->db->get();
 
-      foreach ($query->result_array() as $row) {
-        echo $row['id'];
-        return $row['id'];
+      if ($query->num_rows() > 0) {
+        return false;
+      } else {
+        try {
+          $this->db->select('name', 'password');
+          $this->db->from('login');
+          $this->db->where('name', $data["name"]);
+          $this->db->where('password', $data["password"]);
+          $this->db->select('name', 'password');
+          $this->db->from('login');
+          $this->db->where('name', $data["name"]);
+          $this->db->where('password', $data["password"]);
+
+          $q = $this->db->get();
+
+          foreach ($q->result_array() as $r) {
+            echo $r['id'];
+            return $r['id'];
+          }
+        } catch (Exception $e) {
+          echo $e;
+          return false;
+        }
       }
-    } else {
-      return false;
     }
   }
 

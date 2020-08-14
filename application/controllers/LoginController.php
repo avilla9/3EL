@@ -27,6 +27,7 @@ class LoginController extends CI_Controller
     );
     if ($this->form_validation->run() == FALSE) {
       echo validation_errors();
+      return false;
     } else {
       $data["name"] = $this->input->post("email");
       $data["password"] = $this->input->post("password");

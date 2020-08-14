@@ -12,10 +12,17 @@ class Tictactoe extends CI_Controller
   }
 
 
+  public function create()
+  {
+    $data["against"] = $this->input->post("against");
+    $data["winner"] = $this->input->post("winner");
+  }
+
   public function index()
   {
 
     $data['scores'] = $this->scores_model->get_scores();
+    //var_dump($data["scores"]);
     $data['title'] = 'TicTacToe';
     $data['level'] = $this->uri->segment(3);
     $this->load->view('templates/header', $data);
@@ -24,10 +31,6 @@ class Tictactoe extends CI_Controller
   }
 
   public function view($slug = NULL)
-  {
-  }
-
-  public function create()
   {
   }
 }

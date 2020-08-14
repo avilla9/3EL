@@ -117,7 +117,6 @@ gamearea = {
     return "stopgame";
   },
   saveGame: function (gameresult) {
-
     $.ajax({
       method: 'POST',
       url: base_url + '/scores/create',
@@ -127,10 +126,11 @@ gamearea = {
       },
       success: function (data) {
         gamearea.renderScores(data);
+        console.log(data);
       }
       ,
       error: function () {
-
+        console.log(data);
       },
       progress: function (e) {
         $("#scores").html('<div class="text-center"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>');

@@ -28,7 +28,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
               url = "<?php echo base_url(); ?>Tictactoe/index/0/" + data;
               $(location).attr("href", url);
             } else {
-              swal("Error al iniciar sesión", "Verifique los campos e intente nuevamente.", "warning");
+              swal("Error al iniciar sesión", "Por favor intente nuevamente.", "warning");
             }
           }
         );

@@ -40,6 +40,8 @@
               <h1>Tres en Línea</h1>
             </center>
           </p>
+          <br>
+          <p id="player"></p>
         </div>
         <div class="col-md-12 col-xs-12 footer">
           <br><br>

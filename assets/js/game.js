@@ -1,15 +1,24 @@
-/* $(document).ready(function () {
+$(document).ready(function () {
 
   $.get(
-    "Tictactoe/getForm",
+    "Tictactoe/getData",
     $(this).serialize(),
     function (data) {
-      if (data == 1) {
-        url = "<?php echo base_url(); ?>tictactoe/index/0";
-        $(location).attr("href", url);
-      } else {
-        swal("Error al iniciar sesión", "Error desconocido", "warning");
-      }
     }
   );
-}); */
+
+
+  $.ajax({
+    method: 'POST',
+    url: base_url + 'Tictactoe/getData',
+    data: {
+      id_user: 1
+    },
+    success: function (data) {
+      $("#player").html(data);
+    },
+    error: function (data) {
+      console.log("error", data);
+    }
+  });
+});

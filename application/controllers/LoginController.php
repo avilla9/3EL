@@ -38,22 +38,4 @@ class LoginController extends CI_Controller
       }
     }
   }
-
-  public function verifyUser()
-  {
-    $_POST = json_decode(file_get_contents('php://input'), true);
-    var_dump("response: ", $this->input->post('user'));
-    if ($this->input->is_ajax_request()) {
-      $user = $this->input->post('user');
-      $pass = $this->input->post('pass');
-      $this->load->model('LoginModel');
-      if ($this->LoginModel->login($user, $pass)) {
-        echo json_encode(true);
-      } else {
-        echo json_encode(false);
-      }
-    } else {
-      echo json_encode(false);
-    }
-  }
 }

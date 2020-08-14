@@ -1,0 +1,88 @@
+html, body, .container-fluid {            
+    height:100%;
+    padding:0px;margin:0px;
+}
+.mainpanel {
+    width:100%;
+    height:100%;
+    padding:0px;margin:0px;
+}
+.gameboard {
+    height: 100%;
+    margin: auto;
+
+}
+.gameboard .row{
+    height:29%;
+}
+.gameboard .turn{
+    height:13%;
+}
+.leftpanel {
+    height:100%;
+    background: #40bad5;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, #e3e7f1 0%, #00818a 100%), -moz-linear-gradient(-45deg, #aeefec 0%, #40bad5 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, #e3e7f1 0%, #00818a 100%), -webkit-linear-gradient(-45deg, #aeefec 0%, #40bad5 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, #e3e7f1 0%, #00818a 100%), -o-linear-gradient(-45deg, #aeefec 0%, #40bad5 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, #e3e7f1 0%, #00818a 100%), -ms-linear-gradient(-45deg, #aeefec 0%, #40bad5 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, #e3e7f1 0%, #00818a 100%), linear-gradient(135deg, #aeefec 0%, #40bad5 100%);
+}
+.rightpanel {
+    height:100%;
+    background: #009f9d;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, #c9d1d3 0%, #00909e 100%), -moz-linear-gradient(-45deg, #aeefec 0%, #009f9d 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, #c9d1d3 0%, #00909e 100%), -webkit-linear-gradient(-45deg, #aeefec 0%, #009f9d 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, #c9d1d3 0%, #00909e 100%), -o-linear-gradient(-45deg, #aeefec 0%, #009f9d 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, #c9d1d3 0%, #00909e 100%), -ms-linear-gradient(-45deg, #aeefec 0%, #009f9d 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, #c9d1d3 0%, #00909e 100%), linear-gradient(135deg, #aeefec 0%, #009f9d 100%);
+}
+.rpanelheader {
+    text-align: center;
+    font-weight: bold;
+}
+.scoresheading div{
+    font-weight: bold;
+}
+.box {
+    border:3px solid #1a2849;
+    height:100%;
+    text-align: center; 
+    width:33.33%;            
+    font-size:60px;
+}
+.turn {
+    text-align:center;
+    padding-top:5px;            
+}        
+.tleft, .tright, .bright, .bleft { border:0; }
+.middle { border: 1; }
+.mleft, .mright  { border-left:0;border-right: 0; }         
+.bottom, .top { border-bottom: 0; border-top: 0;}        
+
+.friend_computer {
+    height: 50%;
+    width:100%;
+}
+.friend_computer div {
+    text-align:center;width:50%;float:left;
+}
+.friend, .computer { height:100%;padding-top:5px; }
+.footer { height:100%; }
+.footer .text-info { height:50%;}
+i {             
+    vertical-align: middle;
+}
+@media (min-width: 768px)            
+{
+     div[class^="gameboard"]{width: 70%;height:70%;}
+
+        .gameboard .row{
+            height:25%;
+        }
+        .gameboard .turn{
+            height:12.5%;
+        }
+        .box {
+            padding-top: 20px;
+        }
+}

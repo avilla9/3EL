@@ -1,8 +1,5 @@
 <?php
 
-/*
- * We implement the load constructor and index view
- */
 class Tictactoe extends CI_Controller
 {
 

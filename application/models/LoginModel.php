@@ -2,23 +2,20 @@
 
 class LoginModel extends CI_Model
 {
-    public function Login($name, $password)
+    public function login($data)
     {
         $this->db->select('name', 'password');
-        $this->db->from('Login');
-        $this->db->where('name', $name);
-        $this->db->where('password', $password);
+        $this->db->from('login');
+        $this->db->where('name', $data["name"]);
+        $this->db->where('password', $data["password"]);
 
         $query = $this->db->get();
-        if ($query->num_rows() == 1) {
+        if ($query->num_rows() >= 1) {
+            return true;
+        } else if ($this->db->insert('login', $data)) {
             return true;
         } else {
-            $data = [
-                "name" => $name,
-                "password" => $password
-            ];
-            $this->db->insert('tictactoe.Login', $data);
-            return true;
+            return false;
         }
     }
 }

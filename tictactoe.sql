@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jan 30, 2017 at 12:13 PM
--- Server version: 5.7.17-0ubuntu0.16.04.1
--- PHP Version: 7.0.13-0ubuntu0.16.04.1
+-- Servidor: localhost
+-- Tiempo de generación: 13-08-2020 a las 10:22:20
+-- Versión del servidor: 10.4.13-MariaDB
+-- Versión de PHP: 7.2.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tictactoe`
+-- Base de datos: `tictactoe`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Login`
+-- Estructura de tabla para la tabla `Login`
 --
 
 CREATE TABLE `Login` (
@@ -35,7 +36,7 @@ CREATE TABLE `Login` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `scores`
+-- Estructura de tabla para la tabla `scores`
 --
 
 CREATE TABLE `scores` (
@@ -43,34 +44,42 @@ CREATE TABLE `scores` (
   `against` varchar(10) NOT NULL,
   `winner` varchar(32) NOT NULL,
   `scores` int(11) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=MRG_MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `Login`
+-- Indices de la tabla `Login`
 --
 ALTER TABLE `Login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `scores`
+-- Indices de la tabla `scores`
 --
 ALTER TABLE `scores`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `scores`
+-- AUTO_INCREMENT de la tabla `Login`
+--
+ALTER TABLE `Login`
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `scores`
 --
 ALTER TABLE `scores`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

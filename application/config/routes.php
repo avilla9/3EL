@@ -55,7 +55,7 @@ $route['default_controller'] = 'LoginController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['scores/create'] = 'scores/create';
+$route['/Tictactoe/create'] = '/Tictactoe/create';
 $route['scores/(:any)'] = 'scores/view/$1';
 $route['scores'] = 'scores';
 $route[''] = '';

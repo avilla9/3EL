@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row mainpanel">
-    <div class="col-md-9 leftpanel">
+    <div class="col-md-7 leftpanel">
       <div class="gameboard">
         <div class="row turn hidden-xs">
           <div class="col-md-12"></div>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3 hidden-xs rightpanel color-swatch gray-lighter">
+    <div class="col-md-5 hidden-xs rightpanel color-swatch gray-lighter">
       <div class="row turn">
         <div class="col">
           <p>

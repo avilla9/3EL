@@ -7,12 +7,11 @@ $(document).ready(function () {
     }
   );
 
-
   $.ajax({
     method: 'POST',
     url: base_url + 'Tictactoe/getData',
     data: {
-      id_user: 1
+      id_user: user
     },
     success: function (data) {
       $("#player").html(data);

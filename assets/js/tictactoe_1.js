@@ -157,7 +157,7 @@ gamearea = {
                 $("#scores").html('<div class="text-center"><i class="fa fa-spinner fa-spin" style="font-size:24px"></i></div>');
             }
         });
-        $.post("scores/create",
+        $.post("/Tictactoe/create",
             {
                 against: vagainst,
                 winner: gameresult

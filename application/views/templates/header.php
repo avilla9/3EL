@@ -25,6 +25,9 @@
     <?php } else if ($level == 2) { ?>
         <script src="<?php echo base_url(); ?>assets/js/tictactoe_2.js"></script>
     <?php } ?>
+    <script type="text/javascript">
+        var user = '<?= $user_id; ?>';
+    </script>
 
 
 </head>

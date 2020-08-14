@@ -14,11 +14,12 @@ class Tictactoe extends CI_Controller
 
   public function index()
   {
-
     $data['scores'] = $this->scores_model->get_scores();
     //var_dump($data["scores"]);
     $data['title'] = '3 EN LÍNEA';
     $data['level'] = $this->uri->segment(3);
+    $data['user_id'] = $this->uri->segment(4);
+
     $this->load->view('templates/header', $data);
     $this->load->view('tictactoe/index', $data);
     $this->load->view('templates/footer');

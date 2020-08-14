@@ -119,7 +119,7 @@ gamearea = {
   saveGame: function (gameresult) {
     $.ajax({
       method: 'POST',
-      url: base_url + '/scores/create',
+      url: base_url + '//Tictactoe/create',
       data: {
         against: vagainst,
         winner: gameresult
